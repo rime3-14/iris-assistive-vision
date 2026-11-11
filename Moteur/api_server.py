@@ -377,10 +377,8 @@ if INTERFACE_DIR.exists():
 else:
     print(f"[api] Warning: interface directory not found at {INTERFACE_DIR}")
 
-if DATA_DIR.exists():
-    app.mount("/data", StaticFiles(directory=DATA_DIR), name="data")
-else:
-    print(f"[api] Warning: data directory not found at {DATA_DIR}")
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+app.mount("/data", StaticFiles(directory=DATA_DIR), name="data")
 
 
 # ---------------------------------------------------------------------------
