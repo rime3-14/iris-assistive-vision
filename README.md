@@ -4,7 +4,7 @@ IRIS is a local scene-description prototype developed by a fourth-year INSA Lyon
 
 ## Start the local web app
 
-Use Python 3.11 or 3.12. From the repository root:
+Use Python 3.11 or 3.12. Run these commands from the repository root.
 
 ```bash
 python -m venv .venv
@@ -17,7 +17,7 @@ On Windows, activate with `.venv\Scripts\Activate.ps1`. Open `http://127.0.0.1:8
 
 ## Run live inference
 
-Start Ollama locally and pull the configured models:
+Start Ollama locally and pull the configured models.
 
 ```bash
 ollama pull llava-phi3
