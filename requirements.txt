@@ -1,0 +1,8 @@
+numpy
+PyYAML
+jsonschema
+opencv-python
+ultralytics
+pyttsx3
+fastapi
+uvicorn[standard]
